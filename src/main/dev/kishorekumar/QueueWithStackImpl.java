@@ -2,7 +2,7 @@ package dev.kishorekumar;
 
 import java.util.Stack;
 
-public class QueueImplementationWithStack<T> {
+public class QueueWithStackImpl<T> {
 
     private final Stack<T> stack = new Stack<>();
 
@@ -23,6 +23,10 @@ public class QueueImplementationWithStack<T> {
             return stack.pop();
         }
         return null;
+    }
+
+    public int size() {
+        return this.stack.size();
     }
 
     @Override
