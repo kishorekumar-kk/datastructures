@@ -98,7 +98,7 @@ public class DoublyLinkedListImpl<T> {
 
     @Override
     public String toString() {
-        StringBuilder stringBuilder = new StringBuilder("DoublyLinkedListImpl{");
+        StringBuilder stringBuilder = new StringBuilder(this.getClass().getName()).append("{");
         stringBuilder.append("head=").append(head).append(",values=").append(head);
         Node<T> next = head.next;
         while (next != null) {

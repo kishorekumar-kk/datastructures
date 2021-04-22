@@ -31,7 +31,7 @@ public class QueueWithStackImpl<T> {
 
     @Override
     public String toString() {
-        return "QueueImplementationWithStack{" +
+        return this.getClass().getName() + "{" +
                 "stack=" + stack +
                 '}';
     }
